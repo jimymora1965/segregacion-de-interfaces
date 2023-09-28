@@ -6,7 +6,6 @@
 from abc import ABC, abstractclassmethod
 
 class Trabajador(ABC):
-
     @abstractclassmethod
     def trabajar(self):
         pass
@@ -35,7 +34,7 @@ class Robot(Trabajador):
     def trabajar(self):
         print("El robot esta trabajando")
 
-humano = Humano()
+humano = Humano()# creo el objeto y luego llamo el metodo que deseo
 humano.comer()
 robot = Robot()
 robot.trabajar()
